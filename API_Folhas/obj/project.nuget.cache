@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "f5UYAyIo7zJKV4l/hVfUSyEX+8DYwNRsSZqT61rQCguPzZG8Uy0pHm8Nr5AbUHRhOzQteQ6/dzni6Pc4ej6pQg==",
+  "dgSpecHash": "I/MxKvrPjmALJGqyitaLlP1DtM5o5c4GICQZJKERz17CiAxbLF5U90lM7TNuSVDXO7Gf+KCDbU7MmT8ObhbzWQ==",
   "success": true,
-  "projectFilePath": "c:\\Users\\00947995986\\Documents\\thursday-test\\API_Folhas\\API_FOlhas.csproj",
+  "projectFilePath": "C:\\Users\\00947995986\\Documents\\thursday-test\\API_Folhas\\API_FOlhas.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\00947995986\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\00947995986\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

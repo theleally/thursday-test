@@ -22,7 +22,42 @@ namespace API_FOlhas.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
+                    b.Property<string>("Ano")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("CriadoEm")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("FuncionarioId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("ImpostoFgts")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<double>("ImpostoInss")
+                        .HasColumnType("REAL");
+
+                    b.Property<double>("ImpostoRenda")
+                        .HasColumnType("REAL");
+
+                    b.Property<string>("Mes")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("QuantidadeHoras")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("SalarioBruto")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<double>("SalarioLiquido")
+                        .HasColumnType("REAL");
+
+                    b.Property<int>("ValorHora")
+                        .HasColumnType("INTEGER");
+
                     b.HasKey("FolhaPagamentoId");
+
+                    b.HasIndex("FuncionarioId");
 
                     b.ToTable("Folhas");
                 });
@@ -57,6 +92,17 @@ namespace API_FOlhas.Migrations
                     b.HasKey("FuncionarioId");
 
                     b.ToTable("Funcionarios");
+                });
+
+            modelBuilder.Entity("API_Folhas.Models.FolhaPagamento", b =>
+                {
+                    b.HasOne("API_Folhas.Models.Funcionario", "Funcionario")
+                        .WithMany()
+                        .HasForeignKey("FuncionarioId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Funcionario");
                 });
 #pragma warning restore 612, 618
         }

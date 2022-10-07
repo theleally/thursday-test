@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\00947995986\\Documents\\thursday-test\\API_Folhas\\API_FOlhas.csproj": {}
+    "C:\\Users\\00947995986\\Documents\\thursday-test\\API_Folhas\\API_FOlhas.csproj": {}
   },
   "projects": {
-    "c:\\Users\\00947995986\\Documents\\thursday-test\\API_Folhas\\API_FOlhas.csproj": {
+    "C:\\Users\\00947995986\\Documents\\thursday-test\\API_Folhas\\API_FOlhas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\00947995986\\Documents\\thursday-test\\API_Folhas\\API_FOlhas.csproj",
+        "projectUniqueName": "C:\\Users\\00947995986\\Documents\\thursday-test\\API_Folhas\\API_FOlhas.csproj",
         "projectName": "API_FOlhas",
-        "projectPath": "c:\\Users\\00947995986\\Documents\\thursday-test\\API_Folhas\\API_FOlhas.csproj",
+        "projectPath": "C:\\Users\\00947995986\\Documents\\thursday-test\\API_Folhas\\API_FOlhas.csproj",
         "packagesPath": "C:\\Users\\00947995986\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\00947995986\\Documents\\thursday-test\\API_Folhas\\obj\\",
+        "outputPath": "C:\\Users\\00947995986\\Documents\\thursday-test\\API_Folhas\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
