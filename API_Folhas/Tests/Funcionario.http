@@ -9,9 +9,9 @@ POST https://localhost:5001/api/funcionario/cadastrar
 Content-Type: application/json
 
 {
-    "nome" : "Leandro Allysson",
-    "cpf" : "12312312317",    
-    "email" : "asda@asda"
+    "nome" : "Pedro",
+    "cpf" : "12312312316",    
+    "email" : "asdad@asdad"
 }
 
 ### Deletar um funcionário

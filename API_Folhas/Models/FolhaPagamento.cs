@@ -17,7 +17,7 @@ namespace API_Folhas.Models
         public int SalarioBruto { get; set; }
         public double ImpostoRenda { get; set; }
         public double ImpostoInss { get; set; }
-        public int ImpostoFgts { get; set; }
+        public double ImpostoFgts { get; set; }
         public double SalarioLiquido { get; set; }
         public string Mes { get; set; }
         public string Ano { get; set; }

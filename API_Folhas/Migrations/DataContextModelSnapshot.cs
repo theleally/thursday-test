@@ -31,8 +31,8 @@ namespace API_FOlhas.Migrations
                     b.Property<int>("FuncionarioId")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("ImpostoFgts")
-                        .HasColumnType("INTEGER");
+                    b.Property<double>("ImpostoFgts")
+                        .HasColumnType("REAL");
 
                     b.Property<double>("ImpostoInss")
                         .HasColumnType("REAL");

@@ -28,6 +28,31 @@ namespace API_Folhas.Controllers
         public IActionResult Cadastrar([FromBody] FolhaPagamento folhap)
         {
             folhap.SalarioBruto = folhap.QuantidadeHoras * folhap.ValorHora;
+            folhap.ImpostoFgts = folhap.SalarioBruto * 0.08;
+            if (folhap.SalarioBruto > 1903.98 && folhap.SalarioBruto < 2826.65)
+            {
+                folhap.ImpostoRenda = 142.8;
+            } else if (folhap.SalarioBruto < 3751.05) {
+                folhap.ImpostoRenda = 354.8;
+            } else if (folhap.SalarioBruto < 4664.68) {
+                folhap.ImpostoRenda = 636.13;
+            } else {
+                folhap.ImpostoRenda = 869.36;
+            }
+            if (folhap.SalarioBruto < 1693.72)
+            {
+                folhap.ImpostoInss = 0.08 * folhap.SalarioBruto;
+            } else if (folhap.SalarioBruto < 2822.90)
+            {
+                folhap.ImpostoInss = 0.09 * folhap.SalarioBruto;
+            } else if (folhap.SalarioBruto < 5645.80)
+            {
+                folhap.ImpostoInss = 0.11 * folhap.SalarioBruto;
+            } else
+            {
+                folhap.ImpostoInss = 621.03;
+            }
+            folhap.SalarioLiquido = folhap.SalarioBruto - folhap.ImpostoRenda - folhap.ImpostoInss;
             _context.Folhas.Add(folhap);
             _context.SaveChanges();
             return Created("", folhap);
